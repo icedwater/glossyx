@@ -1,0 +1,7 @@
+all:
+
+sample:
+
+triangle:
+
+clean:

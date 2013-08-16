@@ -22,3 +22,13 @@ Install these packages using `sudo apt-get install <list-of-packages>`.
 
 Eventually, this should be packaged into a DEB, possibly also an RPM, to make
 installing easier.
+
+Notes
+=====
+  - Make sure that `#include` calls have `GL` in uppercase. It matters for 
+  Linux, not for Windows, so it's fine to do this in cross-platform code.
+  - Compile argument should include `-lglut -lGL -lGLEW` for libraries.
+  - I had to add links `ln -s` to a bunch of `win*.h` to compile `main.cpp`,
+  but linking is still somehow lost. Where do I "build freeGLUT"?
+  - Using `gcc` for `triangle.c` works fine.
+  - Using `g++` for `sample.cpp` works fine.
